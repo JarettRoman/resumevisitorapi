@@ -22,6 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run Unit Tests
+        run: |
+          python -m pytest tests/test_function.py
+
       - name: Install Azure Functions Core Tools
         run: |
           npm install -g azure-functions-core-tools@4 --unsafe-perm true

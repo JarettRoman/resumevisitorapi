@@ -33,4 +33,4 @@ jobs:
 
       - name: Deploy to Azure Function App
         run: |
-            func azure functionapp publish resumevisitorapi
+            func azure functionapp publish resumevisitorapi --python
